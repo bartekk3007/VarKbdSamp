@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Opis interaktywnych elementów w HTML">
+    <meta name="keywords" content="development, helion">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Bartosz Kołakowski">
+    <title>Interaktywne elementy</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <p>Licznik</p>
+    <label for="grades">Ocena z egzaminu</label>
+    <meter id="grades" min="0" max="100" low="20" high="80" optimum="90" value="85"></meter>
+    <p>Pasek postępu</p>
+    <label for="progressBar">Pobieranie pliku</label>
+    <progress id="progressBar" max="100" value="85">85%</progress>
+    <p>Pole tekstowe</p>
+    <label for="username">Nazwa użytkownika:</label>
+    <input id="username" type="text" name="username">
+    <p>Hasła</p>
+    <label for="password">Hasło użytkownika:</label>
+    <input id="password" type="password" name="password">
+    <p>Przycisk wyboru</p>
+    <label for="red">Czerwony</label>
+    <input id="red" type="radio" name="color" value="red">
+    <p>Pole wyboru</p>
+    <label for="apple">Jabłko</label>
+    <input id="apple" type="checkbox" name="fruit" value="apple">
+    <p>Przycisk koloru</p>
+    <input type="color">
+    <p>Suwak</p>
+    <label for="slider">Punkty</label>
+    <input id="slider" type="range" name="points" min="0" max="50">
+    <p>Przycisk</p>
+    <input type="button" value="Przycisk">
+    <p>Pole tekstowe</p>
+    <textarea name="message" rows="4" cols="50"></textarea>
+    <p>Lista rozwijana</p>
+    <label for="fruit">Wybierz owoc:</label>
+    <select id="fruit" name="fruit">
+        <option value="apple">Banan</option>
+        <option value="banana">Jabłko</option>
+        <option value="cherry">Wiśnia</option>
+    </select>
+    <p>Pole numeryczne</p>
+    <label for="age">Wiek:</label>
+    <input id="age" type="number"  name="age" min="0" max="120" step="1" value="25">
+    <p>Szczegóły i podsumowanie</p>
+    <details>
+        <summary>Kliknij, aby rozwinąć</summary>
+        To jest ukryta treść, która pojawi się po rozwinięciu.
+    </details>
+    <p>Data</p>
+    <label for="birthday">Data urodzenia:</label>
+    <input id="birthday" type="date" name="birthday">
+    <p>Czas</p>
+    <label for="appt">Godzina spotkania:</label>
+    <input id="appt" type="time" name="appt">
+    <p>Data i czas</p>
+    <label for="event">Wybierz datę i godzinę wydarzenia:</label>
+    <input id="event" type="datetime-local" name="event">
+    <menu type="context">
+        <li><a href="#">Opcja 1</a></li>
+        <li><a href="#">Opcja 2</a></li>
+        <li><a href="#">Opcja 3</a></li>
+    </menu>
+    <p>
+        Wzór na energię potencjalną to <var>m</var> × <var>g</var> × <var>h</var>
+    </p>
+    <p>
+        Aby skopiować użyj skrótu klawiszowego <kbd>Ctrl</kbd> <kbd>C</kbd>
+    </p>
+    <p>
+        W trakcie pisania kodu miałem ostrzeżenie: <samp>Missed locally stored library for HTTP link</samp>
+    </p>
+</body>
+</html>
